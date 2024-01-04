@@ -64,7 +64,7 @@ in_alive = "<b>Key-Userbot</b>\n<b>     status :</b> <code>{}</code>{}\n<b>     
 absen = [
     "**** 😝",
     "**Hadir bang kucing** 😍",
-    "**** 😁",
+    "**ja kontol** 🖕",
     "**** 😘",
     "**** 🤗",
     "**** 🤗",
@@ -87,6 +87,11 @@ async def Key(Key):
 @register(incoming=True, from_users=DEVS, pattern=r"^absenn$")
 async def Key(Key):
     await Key.reply("**uraaaaaa hadir**🔥")
+
+
+@register(incoming=True, from_users=DEVS, pattern=r"^ja$")
+async def Key(Key):
+    await Key.reply("**ja kontol**😭")
 
 
 
@@ -196,10 +201,10 @@ async def lol(
 @register(incoming=True, from_users=DEVS, pattern=r"^Cping$")
 async def _(event):
     start = time.time()
-    x = await event.eor("AH AH!")
+    x = await event.eor("AH enak sayang!")
     end = round((time.time() - start) * 1000)
     uptime = time_formatter((time.time() - start_time) * 1000)
-    await x.edit(f"**CROTT🤤** - `{end}ms`\n**Durasi Ngewe🤖** - `{uptime}`")
+    await x.edit(f"**sepong memek🤤** - `{end}ms`\n**jumlah peju💦** - `{uptime}`")
 
 
 async def get_readable_time(seconds: int) -> str:
