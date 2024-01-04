@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 REPO="https://github.com/Mericantik/Testiuserbot.git"
-DIR="/root/mericantik"
+DIR="/root/Mericantik"
 
 spinner(){
     local pid=$!
@@ -31,7 +31,7 @@ clone_repo(){
             fi
             return
     fi
-    echo -e "Cloning meki ${BRANCH}... "
+    echo -e "Cloning Testiuserbot ${BRANCH}... "
     git clone -b $BRANCH $REPO $DIR
 }
 
