@@ -52,7 +52,7 @@ async def startmute(event):
         userid = reply.sender_id
         if reply.out or userid in [ayra_bot.me.id, asst.me.id]:
             return await xx.eor(
-                "`Anda tidak dapat membisukan diri sendiri atau bot asisten Anda.`"
+                "`Anda tidak dapat menghapus kata kata sendiri.`"
             )
     elif event.is_private:
         userid = event.chat_id
@@ -65,9 +65,9 @@ async def startmute(event):
     elif "creator" not in vars(chat) and not event.is_private:
         return await xx.eor("`Tidak ada hak admin...`", time=5)
     if is_muted(event.chat_id, userid):
-        return await xx.eor("`Pengguna ini sudah dibisukan dalam obrolan ini.`", time=5)
+        return await xx.eor("`Kata ini sudah di blackliat di grup ini.`", time=5)
     mute(event.chat_id, userid)
-    await xx.eor("`Berhasil dibisukan...`", time=3)
+    await xx.eor("`Berhasil di tambahkan kata terlarang...`", time=3)
 
 
 @ayra_cmd(
@@ -90,7 +90,7 @@ async def endmute(event):
     if not is_muted(event.chat_id, userid):
         return await xx.eor("`Pengguna ini tidak dibisukan dalam obrolan ini.`", time=3)
     unmute(event.chat_id, userid)
-    await xx.eor("`Berhasil disuarakan...`", time=3)
+    await xx.eor("`Berhasil di hapus dari kata terlarang...`", time=3)
 
 
 @ayra_cmd(
