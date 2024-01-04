@@ -57,7 +57,7 @@ async def startmute(event):
     elif event.is_private:
         userid = event.chat_id
     else:
-        return await xx.eor("`Balas ke pengguna atau tambahkan kata terlarabg.`", time=5)
+        return await xx.eor("`Balas ke pengguna atau tambahkan kata terlarang.`", time=5)
     chat = await event.get_chat()
     if "admin_rights" in vars(chat) and vars(chat)["admin_rights"] is not None:
         if not chat.admin_rights.delete_messages:
