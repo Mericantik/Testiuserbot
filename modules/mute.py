@@ -13,11 +13,11 @@
 ๏ **Perintah:** `unmute` <balas pesan/berikan username>
 ◉ **Keterangan:** Aktifkan pengguna dalam obrolan saat ini.
 
-๏ **Perintah:** `dmute` <balas pesan/berikan username>
-◉ **Keterangan:** Bisukan pengguna dalam obrolan saat ini dengan menghapus pesan.
+๏ **Perintah:** `bl` <balas pesan/berikan username>
+◉ **Keterangan:** Berhasil menambah kata terlarang di grup ini.
 
-๏ **Perintah:** `undmute` <balas pesan/berikan username>
-◉ **Keterangan:** Suarakan pengguna yang dibisukan dalam obrolan saat ini.
+๏ **Perintah:** `unbl` <balas pesan/berikan username>
+◉ **Keterangan:** berhasil menghapus kata terlarang.
 """
 from Ayra.dB.mute_db import is_muted, mute, unmute
 from Ayra.fns.admins import ban_time
