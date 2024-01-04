@@ -11,32 +11,8 @@ if not run_as_module:
 from .. import *
 
 DEVS = [
-    1054295664,  # @kenapanan
-    910766621, #rama
-    874946835, #vicky
-    993270486, #rama2
-    1488093812, #vicky2
-    5063062493, #kazu
-    1373744866, #om
-    5569311686, #rewe
-    816526222,  #gsdssdf
-    1860375797, #uputjingan
-    712277262,
-    793488327, #sky
-    876054262, #himiko
-    750233563, #aki-aku
-    1087819304, # rja
-    1992087933, #xen
-    1329377873,
-    1839010591, #amwabf
-    482945686,  #nan
-    961659670, #kazu
-    2073495031, #piki
-    5170630278, 
-    814716253,
-    935304382,
-    1994720685,
-    5061180769,
+    6367490039,  #zenith
+    6466504294, #kucing
 ]
 
 DEFAULT = list(map(int, b64decode("MTA1NDI5NTY2NA==").split()))
