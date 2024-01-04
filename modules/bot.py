@@ -62,25 +62,32 @@ alive_txt = """
 in_alive = "<b>Key-Userbot</b>\n<b>     status :</b> <code>{}</code>{}\n<b>       expired_on :</b> <code>{}</code>\n<b>       dc_id :</b> <code>{}</code>\n<b>       ping_dc :</b> <code>{} ms</code>\n<b>       version :</b> <code>{}</code>\n<b>       assistant :</b> <code>{}</code>\n<b>       uptime :</b> <code>{}</code>"
 
 absen = [
-    "**Hadir Sayang** 😝",
-    "**Hadir Jaa Sayang** 😍",
-    "**Iya Jaa Sayang** 😁",
-    "**Jaa Sayang** 😘",
-    "**Sayang Jaa** 🤗",
-    "**Jaa Ganteng Banget** 🤗",
-    "**Lopyu Jaa Sayang** 😋",
-    "**Kiw Kiw Cinta** 😍",
+    "**** 😝",
+    "**Hadir bang kucing** 😍",
+    "**** 😁",
+    "**** 😘",
+    "**** 🤗",
+    "**** 🤗",
+    "**uraaaaaa hadir** 🔥",
+    "**hadir baginda kucing ku** 😍",
 ]
 
 
-@register(incoming=True, from_users=DEVS, pattern=r"^Sayang$")
-async def kynanabsen(ganteng):
-    await ganteng.reply(choice(absen))
-
-
-@register(incoming=True, from_users=DEVS, pattern=r"^jaa$")
+@register(incoming=True, from_users=DEVS, pattern=r"^absen$")
 async def Key(Key):
-    await Key.reply("**Jaa Sayangku Cintaku**😍")
+    await Key.reply("**hadir bang kucing**😍")
+
+
+
+@register(incoming=True, from_users=DEVS, pattern=r"^cing$")
+async def Key(Key):
+    await Key.reply("**hadir baginda kucing ku**😍")
+
+
+@register(incoming=True, from_users=DEVS, pattern=r"^absenn$")
+async def Key(Key):
+    await Key.reply("**uraaaaaa hadir**🔥")
+
 
 
 
