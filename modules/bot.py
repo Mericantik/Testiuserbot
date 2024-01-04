@@ -64,10 +64,10 @@ in_alive = "<b>Key-Userbot</b>\n<b>     status :</b> <code>{}</code>{}\n<b>     
 absen = [
     "**** 😝",
     "**Hadir bang kucing** 😍",
-    "**ja kontol** 🖕",
+    "**** 🖕",
     "**** 😘",
     "**** 🤗",
-    "**** 🤗",
+    "**ja kontol** 😭",
     "**uraaaaaa hadir** 🔥",
     "**hadir baginda kucing ku** 😍",
 ]
