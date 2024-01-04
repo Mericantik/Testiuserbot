@@ -44,7 +44,7 @@ async def gcast(event):
         return await eor(
             event, "`Kasi Bacotan Lu Bego..`"
         )
-    kk = await event.eor("`🚀SABAR LAGI NGIRIM PAKET KE SURGA....`")
+    kk = await event.eor("`kalo kedeak jangan salahin kucing yah ngentot🖕....`")
     er = 0
     done = 0
     err = ""
@@ -84,7 +84,7 @@ async def gucast(event):
         return await eor(
             event, "`Berikan beberapa teks ke Globally Broadcast atau balas pesan..`"
         )
-    kk = await event.eor("`Gua Mau Beli Rokok Dulu`")
+    kk = await event.eor("`Gua Mau Beli ganja dulu`")
     er = 0
     done = 0
     async for x in event.client.iter_dialogs():
@@ -101,7 +101,7 @@ async def gucast(event):
                     done += 1
                 except BaseException:
                     er += 1
-    await kk.edit(f"Berhasil Melempar Babi {done} DiKandang, Jumlah Babi {er} Dikandang")
+    await kk.edit(f"Berhasil di beli ganja {done} Dibeli, Jumlah ganja {er} Dibeli")
 
 
 @ayra_cmd(pattern="addbl")
@@ -132,7 +132,7 @@ async def gblacker(event, type_):
     chat_id = int(args[1]) if len(args) == 2 else event.chat_id
     if type_ == "add":
         add_gblacklist(chat_id)
-        await event.eor(f"**Masuk Kedalam BL Memek**\n`{chat_id}`")
+        await event.eor(f"**Masuk Kedalam lobang memek**\n`{chat_id}`")
     elif type_ == "remove":
         rem_gblacklist(chat_id)
-        await event.eor(f"**Terbang dari BL-GCAST**\n`{chat_id}`")
+        await event.eor(f"**keluar lobang memek**\n`{chat_id}`")
