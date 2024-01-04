@@ -65,7 +65,7 @@ async def startmute(event):
     elif "creator" not in vars(chat) and not event.is_private:
         return await xx.eor("`Tidak ada hak admin...`", time=5)
     if is_muted(event.chat_id, userid):
-        return await xx.eor("`Kata ini sudah di blackliat di grup ini.`", time=5)
+        return await xx.eor("`Kata ini sudah di blacklist di grup ini.`", time=5)
     mute(event.chat_id, userid)
     await xx.eor("`Berhasil di tambahkan kata terlarang...`", time=3)
 
