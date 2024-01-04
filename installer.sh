@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-REPO="https://github.com/ejaanck/meki.git"
-DIR="/root/ejaanck"
+REPO="https://github.com/Mericantik/Testiuserbot.git"
+DIR="/root/mericantik"
 
 spinner(){
     local pid=$!
